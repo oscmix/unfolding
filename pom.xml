@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+  
+    <parent>
+        <groupId>org.oscmix</groupId>
+        <artifactId>oscmix</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <groupId>org.oscmix.unfolding</groupId>
+    <artifactId>unfolding</artifactId>
+    <version>0.9.93-SNAPSHOT</version>
+
+    <name>Unfolding: a library to create interactive maps and geovisualizations.</name>
+    <description>A fork of the original Unfolding Maps project. 
+        Copyright (C) 2015 Till Nagel, and contributors. Developed at Interaction Design Lab Potsdam, 
+        KU Leuven, and MIT Senseable City Lab. 
+    </description>
+    <url>http://www.unfoldingmaps.org</url>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+    </properties>
+    
+    <repositories>
+        <repository>
+            <name>project local repository</name>
+            <id>project.repository.local</id>
+            <url>file:${project.basedir}/lib</url>
+        </repository>
+    </repositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.tngtech.junit.dataprovider</groupId>
+            <artifactId>junit-jupiter-dataprovider</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.processing</groupId>
+            <artifactId>processing-core</artifactId>
+            <version>3.0.1</version>                
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+        <!--  Log4j 1.x API Bridge: legacy code uses Log4j 1.x, that logging is routed to Log4j 2.x-->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-1.2-api</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20200518</version>
+        </dependency>
+    </dependencies>
+
+</project>
