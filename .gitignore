@@ -2,7 +2,6 @@ bin/
 build/
 classes/
 dist/
-doc/
 /nbdist/
 /nbproject/private/
 .classpath
