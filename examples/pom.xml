@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.oscmix</groupId>
+        <artifactId>oscmix</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <groupId>org.oscmix.unfolding</groupId>
+    <artifactId>examples</artifactId>
+    <version>0.9-SNAPSHOT</version>
+
+    <name>Unfolding Examples</name>
+    <description>Unfolding examples showing various features, API usage, and selected experiments.</description>
+    <url>http://www.unfoldingmaps.org/examples</url>
+
+    <properties>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <repositories>
+        <repository>
+            <name>project.local.repository</name>
+            <id>project.repository.local</id>
+            <url>file:${project.basedir}../lib</url>
+        </repository>
+    </repositories>
+  
+    <dependencies>
+        <dependency>
+            <groupId>org.processing</groupId>
+            <artifactId>processing-core</artifactId>
+            <version>3.0.1</version>    
+        </dependency>
+        <dependency>            
+            <groupId>org.oscmix.unfolding</groupId>            
+            <artifactId>unfolding</artifactId>
+            <version>0.9.93-SNAPSHOT</version>            
+        </dependency>
+    </dependencies>
+
+  
+</project>
