@@ -6,3 +6,4 @@ dist/
 /nbproject/private/
 .classpath
 /target/
+/examples/target/
